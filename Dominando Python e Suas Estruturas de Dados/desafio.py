@@ -17,12 +17,12 @@ LIMITE_SAQUE = 3
 
 while True:
     option=input(menu)
-
+#Deposito
     if option =="d":
         valor_deposito = int(input("Digite o valor do deposito:"))
         saldo += valor_deposito
         print("Valor Depositado RS:{}".format (valor_deposito))
-
+#Saque
     elif option == "s":
         if numero_saques < LIMITE_SAQUE:
             valor_saque = int(input("Digite o valor a ser sacado:"))
@@ -36,11 +36,11 @@ while True:
         else:
             print("Limite de saques exedido.")
     
-    
+#Extrato   
     elif option == "e":
         print(extrato)
         print("Saldo atual: R${}".format(saldo))
-    
+#Sair
     elif option =="q":
         break
     
