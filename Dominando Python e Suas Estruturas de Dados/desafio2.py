@@ -18,8 +18,6 @@ def depositar(saldo, valor, extrato,/):
         print("@@@ Operação falhou! O valor informado é invalido. @@@")
     return saldo, extrato    
 
-
-
 def main():
     LIMITE_SAQUE = 3
     AGENCIA = "0001"
@@ -34,7 +32,7 @@ def main():
     while True:
         opcao = menu()
         
-        if opcao == "d":
+        if opcao == "d"
         valor = int(input("informe o valor do deposito: "))
 
         saldo, extrato = depositar(saldo, valor, extrato)
@@ -60,12 +58,4 @@ def main():
          elif opcao =="nc":
             numero_conta = len(contas) + 1
             contas = criar_conta(AGEJNCIA, numero_conta, usuarios)
-        
-
-
-
-
-
-
-
-main()
+            main()
